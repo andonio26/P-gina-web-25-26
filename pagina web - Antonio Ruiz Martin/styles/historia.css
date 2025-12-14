@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: "Pacifico", cursive;
+    font-size: 22px;
+}
+
+body {
+    background-image: url(../images/mario_fondo.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    height: 100vh; 
+}
+/* Cabecera */
+header {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F20202;
+    border: 5px solid #000000;
+    height: 30vh;
+}
+
+.titulo {
+    width: 20vw;
+}
+
+nav {
+    display: flex;
+    margin: 2vh;
+    justify-content: space-between;
+
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+a:active {
+    color: #00F226;
+}
+/* Cuerpo */
+main {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.creador {
+    text-align: center;
+    width: 100vw;
+    height: 70vh;
+    background-color: #D9D91E;
+    border: 5px solid #000000;
+}
+
+.miyamoto {
+    height: 30vh;
+    border: 5px solid #000000;
+
+}
+
+.inicios {
+    text-align: center;
+    width: 100vw;
+    height: 70vh;
+    background-color: #00F226;
+    border: 5px solid #000000;
+    overflow: scroll;
+}
+
+.mario_bros {
+    height: 30vh;
+    border: 5px solid #000000;
+}
+
+.super_mario {
+    height: 30vh;
+    border: 5px solid #000000;    
+}
+
+.actualidad {
+    text-align: center;
+    width: 100vw;
+    height: 70vh;
+    background-color: #4791FF;
+    border: 5px solid #000000;
+}
+
+.mario_wonder {
+    height: 30vh;
+    border: 5px solid #000000;     
+}
+/* Pie de página*/
+footer {
+    text-align: center;
+    background-color: #F20202;
+    border: 5px solid #000000;
+    height: 10vh;
+}

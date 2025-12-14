@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: "Pacifico", cursive;
+    font-size: 22px;
+}
+
+body {
+    background-image: url(../images/mario_fondo.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    height: 100vh; 
+}
+/* Cabecera */
+header {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F20202;
+    border: 5px solid #000000;
+}
+
+.titulo {
+    width: 20vw;
+}
+
+nav {
+    display: flex;
+    margin: 2vh;
+    justify-content: space-between;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+a:active {
+    color: #00F226;
+}
+/* Cuerpo */
+main {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+article {
+    width: 100vh;
+    border: 5px solid #000000;
+}
+.mario {
+    text-align: center;
+    background-color:#C46060;
+}
+
+.mario_foto {
+    height: 16vh;
+    transition: transform 0.4s ease-in-out;
+}
+
+.mario_foto:hover {
+    transform: scale(1.26);
+}
+
+.peach {
+    text-align: center;
+    background-color: #FF5EA2;
+}
+
+.peach_foto {
+    height: 16vh;
+    transition: transform 0.4s ease-in-out;
+}
+
+.peach_foto:hover {
+    transform: scale(1.26);
+}
+
+.yoshi {
+    text-align: center;
+    background-color: #A6F58E;
+}
+
+.yoshi_foto {
+    height: 16vh;
+    transition: transform 0.4s ease-in-out;
+}
+
+.yoshi_foto:hover {
+    transform: scale(1.26);
+}
+
+.luigi {
+    text-align: center;
+    background-color: #00F226;
+}
+
+.luigi_foto {
+    height: 16vh;
+    transition: transform 0.4s ease-in-out;
+}
+
+.luigi_foto:hover {
+    transform: scale(1.26);
+}
+
+.toad {
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.toad_foto {
+    height: 16vh;
+    transition: transform 0.4s ease-in-out;
+}
+
+.toad_foto:hover {
+    transform: scale(1.26);
+}
+
+.bowser {
+    text-align: center;
+    background-color: #FF8C00;
+}
+
+.bowser_foto {
+    height: 16vh;
+    transition: transform 0.4s ease-in-out;
+}
+
+.bowser_foto:hover {
+    transform: scale(1.26);
+}
+
+
+/* Pie de página */
+footer {
+    height: 10vh;
+    text-align: center;
+    width: auto;
+    background-color: #F20202;
+    border: 5px solid #000000;
+}

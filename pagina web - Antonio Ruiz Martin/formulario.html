@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <title>Página web personal</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img class="titulo" src="./images/supermario.svg" alt="Super Mario">
+        <nav>
+            <h2><a href="index.html">Principal</a></h2>
+            <h2><a href="historia.html">Historia</a></h2>
+            <h2><a href="personajes.html">Personajes principales</a></h2>
+            <h2><a href="juegos.html">Juegos</a></h2>
+            <h2><a href="formulario.html">Formulario</a></h2>
+        </nav>
+    </header>
+
+    <!-- Cuerpo -->
+    <main>
+        <h1>Formulario</h1>
+
+        <form>
+            <!-- Registro -->
+            <label for="nombre">Nombre completo:</label>
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Antonio Ruiz Martín"
+                pattern="[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+\s[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+(\s[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+)*"
+                required
+            >
+            <br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input
+                type="email"
+                id="correo"
+                placeholder="manolito@gmail.com"
+                required
+            >
+            <br>
+
+            <label for="password">Contraseña:</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Introduce tu contraseña"
+                pattern="[A-Za-zÑñÁÉÍÓÚáéíóú0-9]{8}"
+                required
+            >
+            <br>
+
+            <!-- Cuestionario -->
+            <h3>¿Qué tipo de juegos de Super Mario prefieres?</h3>
+            <input type="radio" name="mario" id="clasico" value="clasico">
+            <label for="clasico">Clásico</label>
+            <br>
+
+            <input type="radio" name="mario" id="tresD" value="3d">
+            <label for="tresD">3D</label>
+            <br>
+
+            <input type="radio" name="mario" id="otros" value="otros">
+            <label for="otros">Otros</label>
+            <br>
+
+            <h3>¿En qué consolas has jugado a Super Mario?</h3>
+            <input type="checkbox" id="nes" name="consolas" value="NES">
+            <label for="nes">NES</label>
+            <br>
+
+            <input type="checkbox" id="snes" name="consolas" value="SNES">
+            <label for="snes">SNES</label>
+            <br>
+
+            <input type="checkbox" id="n64" name="consolas" value="Nintendo 64">
+            <label for="n64">Nintendo 64</label>
+            <br>
+
+            <input type="checkbox" id="gamecube" name="consolas" value="GameCube">
+            <label for="gamecube">GameCube</label>
+            <br>
+
+            <input type="checkbox" id="wii" name="consolas" value="Wii">
+            <label for="wii">Wii</label>
+            <br>
+
+            <input type="checkbox" id="switch" name="consolas" value="Nintendo Switch">
+            <label for="switch">Nintendo Switch</label>
+            <br>
+
+            <h3>¿Cuál fue el primer juego de Mario que jugaste?</h3>
+            <select name="primerMario" id="primerMario" required>
+                <option value="" disabled selected>-- Selecciona una opción --</option>
+                <option value="smb">Super Mario Bros (NES)</option>
+                <option value="smw">Super Mario World (SNES)</option>
+                <option value="sm64">Super Mario 64</option>
+                <option value="sunshine">Super Mario Sunshine</option>
+                <option value="galaxy">Super Mario Galaxy</option>
+                <option value="odyssey">Super Mario Odyssey</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br>
+
+            <h3>¿Qué valoras más en un juego de Super Mario?</h3>
+            <input type="checkbox" id="plataformas" name="valoras" value="Plataformas">
+            <label for="plataformas">Plataformas</label>
+            <br>
+
+            <input type="checkbox" id="historia" name="valoras" value="Historia">
+            <label for="historia">Historia</label>
+            <br>
+
+            <input type="checkbox" id="graficos" name="valoras" value="Gráficos">
+            <label for="graficos">Gráficos</label>
+            <br>
+
+            <input type="checkbox" id="musica" name="valoras" value="Música">
+            <label for="musica">Música</label>
+            <br>
+
+            <h3>¿Cuál es tu nivel de experiencia con Super Mario?</h3>
+            <input type="radio" id="principiante" name="experiencia" value="Principiante" required>
+            <label for="principiante">Principiante</label>
+            <br>
+
+            <input type="radio" id="intermedio" name="experiencia" value="Intermedio">
+            <label for="intermedio">Intermedio</label>
+            <br>
+
+            <input type="radio" id="experto" name="experiencia" value="Experto">
+            <label for="experto">Experto</label>
+
+            <h3>Valoración de la página web</h3>
+            <input type="radio" id="nota1" name="valoracion" value="1" required>
+            <label for="nota1">1 · Muy mala</label>
+            <br>
+
+            <input type="radio" id="nota2" name="valoracion" value="2">
+            <label for="nota2">2 · Mala</label>
+            <br>
+
+            <input type="radio" id="nota3" name="valoracion" value="3">
+            <label for="nota3">3 · Regular</label>
+            <br>
+
+            <input type="radio" id="nota4" name="valoracion" value="4">
+            <label for="nota4">4 · Buena</label>
+            <br>
+
+            <input type="radio" id="nota5" name="valoracion" value="5">
+            <label for="nota5">5 · Muy buena</label>
+
+            <h3>Sugerencias para mejorar la página</h3>
+            <textarea
+                id="opinion"
+                name="opinion"
+                rows="6"
+                cols="80"
+                placeholder="En mi opinión..."
+            ></textarea>
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <h2>&copy; Página creada por Antonio Ruiz Martín</h2>
+    </footer>
+</body>
+</html>

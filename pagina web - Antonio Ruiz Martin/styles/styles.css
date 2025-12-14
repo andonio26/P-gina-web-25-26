@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: "Pacifico", cursive;
+    font-size: 22px;
+}
+
+body {
+    background-image: url(../images/mario_fondo.jpg);
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    height: 100vh;
+    
+}
+/* Cabecera */
+header {
+    height: 30vh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #F20202;
+    border: 2px solid #000000;
+}
+
+.titulo {
+    width: 20vw;
+}
+
+nav {
+    display: flex;
+    margin: 2vh;
+    justify-content: space-between;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+a:active {
+    color: #00F226;
+}
+/* Cuerpo */
+main {
+    height: 70vh;
+    display: flex;
+    font-size: 26px;
+    
+}
+
+.introduccion {
+    width: 60vw;
+    text-align: center;
+    background-color: #4791FF;
+    border: 5px solid #000000;
+}
+
+.imagen_mario_luigi {
+    height: 40vh;
+    align-items: center;
+}
+
+.noticia {
+    width: 40vw;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+.reciente {
+    overflow: scroll;
+    height: 35vh;
+    background-color: #00F226;
+   
+}
+
+.pelicula {
+    border: 5px solid #000000;
+}
+
+.mas_noticias {
+    height: 34vh;
+    overflow: scroll;
+    background-color: #D9D91E;
+    border: 4px solid #000000;
+}
+
+.mario_galaxy {
+    border: 5px solid #000000;
+}
+
+.conexion_fraternal {
+    border: 5px solid #000000;
+}
+/* Pie de página */
+footer {
+    height: 10vh;
+    text-align: center;
+    width: auto;
+    background-color: #F20202;
+    border: 5px solid #000000;
+}
